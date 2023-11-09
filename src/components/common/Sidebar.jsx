@@ -140,11 +140,7 @@ const Sidebar = () => {
                           <Typography
                             variant="body2"
                             fontWeight="700"
-                            sx={{
-                              whiteSpace: "nowrap",
-                              overflow: "hidden",
-                              textOverflow: "ellipsis",
-                            }}
+                            className="whitespace-nowrap overflow-hidden overflow-ellipsis"
                           >
                             {item.icon} {item.title}
                           </Typography>

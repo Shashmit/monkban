@@ -10,6 +10,7 @@ const Home = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [loading, setLoading] = useState(false);
+  
   const createBoard = async () => {
     try {
       const res = await boardApi.create();

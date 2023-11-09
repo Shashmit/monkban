@@ -154,20 +154,9 @@ const Kanban = (props) => {
                   <Box
                     ref={provided.innerRef}
                     {...provided.droppableProps}
-                    sx={{
-                      width: "300px",
-                      padding: "10px",
-                      marginRight: "10px",
-                    }}
+                    className="w-full p-2 mr-1"
                   >
-                    <Box
-                      sx={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "space-between",
-                        marginBottom: "10px",
-                      }}
-                    >
+                    <Box className="flex items-center justify-between mb-10">
                       <TextField
                         onChange={(e) => updateSectionTitle(e, section._id)}
                         value={section.title}

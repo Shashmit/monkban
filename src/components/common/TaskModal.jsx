@@ -126,26 +126,12 @@ const TaskModal = (props) => {
     >
       <Fade in={task !== undefined}>
         <Box sx={modalStyle}>
-          <Box
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "flex-end",
-              width: "100%",
-            }}
-          >
+          <Box className="flex items-center justify-end">
             <IconButton variant="outlined" color="error" onClick={deleteTask}>
               <DeleteOutlinedIcon />
             </IconButton>
           </Box>
-          <Box
-            sx={{
-              display: "flex",
-              height: "100%",
-              flexDirection: "column",
-              padding: "2rem 5rem 5rem",
-            }}
-          >
+          <Box className="flex flex-col h-full p-8 pr-20 pb-20">
             <TextField
               value={title}
               onChange={updateTitle}
