@@ -83,30 +83,11 @@ const Sidebar = () => {
         container={window.document.body}
         variant="permanent"
         open={true}
-        sx={{
-          width: sidebarWidth,
-          margin: "0px",
-          height: "100vh",
-          "& > div": { borderRight: "none" },
-        }}
+        className="w-64 m-0 min-h-full border-r-0"
       >
-        <List
-          disablePadding
-          sx={{
-            width: sidebarWidth,
-            height: "100vh",
-            backgroundColor: "#f5f5f5",
-          }}
-        >
+        <List disablePadding className="w-64 m-0 min-h-full border-r-0 bg-gray">
           <ListItem>
-            <Box
-              sx={{
-                width: "100%",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "space-between",
-              }}
-            >
+            <Box className="min-w-full flex items-center justify-between">
               <Typography variant="body2" fontWeight="700">
                 {user.username}
               </Typography>
@@ -116,22 +97,11 @@ const Sidebar = () => {
             </Box>
           </ListItem>
 
-          <Box
-            sx={{
-              paddingTop: "10px",
-            }}
-          />
+          <Box className="p-2" />
           <FavouriteList />
           <ListItem>
-            <Box
-              sx={{
-                width: "100%",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "space-between",
-              }}
-            >
-              <Typography variant="body2" fontWeight="700">
+            <Box className="min-w-full flex items-center justify-between">
+              <Typography variant="body1" fontWeight="700">
                 Private
               </Typography>
               <IconButton onClick={addBoard}>

@@ -6,7 +6,6 @@ import { useEffect, useState } from "react";
 import boardApi from "../../api/boardApi";
 import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
 
-
 const FavouriteList = () => {
   const dispatch = useDispatch();
   const list = useSelector((state) => state.favourites.value);
@@ -56,8 +55,8 @@ const FavouriteList = () => {
             justifyContent: "space-between",
           }}
         >
-          <Typography variant="body2" fontWeight="700">
-            Fav
+          <Typography variant="body1" fontWeight="700">
+            Favourite
           </Typography>
         </Box>
       </ListItem>

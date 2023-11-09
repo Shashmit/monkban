@@ -169,14 +169,9 @@ const TaskModal = (props) => {
                 : ""}
             </Typography>
             <Divider sx={{ margin: "1.5rem 0" }} />
-            <Box
+            <div
+              className="relative h-4/5 overflow-x-hidden overflow-y-auto"
               ref={editorWrapperRef}
-              sx={{
-                position: "relative",
-                height: "80%",
-                overflowX: "hidden",
-                overflowY: "auto",
-              }}
             >
               <CKEditor
                 editor={ClassicEditor}
@@ -185,7 +180,7 @@ const TaskModal = (props) => {
                 onFocus={updateEditorHeight}
                 onBlur={updateEditorHeight}
               />
-            </Box>
+            </div>
           </Box>
         </Box>
       </Fade>

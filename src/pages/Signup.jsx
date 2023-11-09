@@ -82,7 +82,6 @@ const Register = () => {
             </Link>
           </p>
         </div>
-        {process.env.BASE}
         <div className="sm:block hidden">
           <img src={loginImage} alt="" />
         </div>

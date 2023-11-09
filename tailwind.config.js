@@ -14,7 +14,7 @@ export default {
       rat: "#04283b",
       "rat-light": "#0a3c55",
       white: "#ffffff",
-      gray: "#f3f4f6",
+      gray: "#f5f5f5",
       black: "#000000",
       blue: "#3b82f6",
       orange: "#fe4934",
