@@ -15,7 +15,7 @@ const Home = () => {
     try {
       const res = await boardApi.create();
       if (res) {
-        navigate(`/boards/${res._id}`);
+        navigate("/");
         // window.location.reload();
         // window.location.href = `/boards/${res._id}`;
       }
