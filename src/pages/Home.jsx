@@ -16,7 +16,6 @@ const Home = () => {
       const res = await boardApi.create();
       if (res) {
         navigate(`/boards/${res._id}`);
-        window.location.reload();
       }
 
       dispatch(setBoards(res));
