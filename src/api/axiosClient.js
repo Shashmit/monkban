@@ -1,7 +1,7 @@
 import axios from "axios";
 import queryString from "query-string";
 
-const baseURL = "https://kanban-api-production-0401.up.railway.app/api";
+const baseURL = import.meta.env.VITE_BASE_URL;
 const getToken = () => localStorage.getItem("token");
 
 const axiosClient = axios.create({
